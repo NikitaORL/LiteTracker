@@ -89,5 +89,5 @@ document.getElementById("checkEstBtn").addEventListener("click", checkEstonian);
 ruInput.addEventListener("keypress", e => { if (e.key === "Enter") checkRussian(); });
 estInput.addEventListener("keypress", e => { if (e.key === "Enter") checkEstonian(); });
 
-// Первичная загрузка слов при открытии страницы
+// Первичная загрузка слов при открытии страни
 loadNewWords();
