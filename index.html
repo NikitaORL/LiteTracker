@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <!-- Адаптивность для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Words – Sõnavara treening</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🎲 Random Words</h1>
+    <p class="subtitle">Harjuta eesti–vene sõnavara</p>
+</header>
+
+<main>
+    <!-- Кнопка обновления страницы / генерации новых слов -->
+    <button id="refreshBtn">🔄 Uued sõnad</button>
+
+    <!-- Таблица с двумя столбцами: эстонский → русский и русский → эстонский -->
+    <table class="word-table">
+        <thead>
+        <tr>
+            <th>Eesti → Vene</th>
+            <th>Vene → Eesti</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <!-- Столбец 1: показываем эстонское слово, вводим русский перевод -->
+            <td>
+                <span id="estWord" class="word">—</span>
+                <input type="text" id="ruInput" placeholder="Sisesta tõlge...">
+                <button id="checkRuBtn">Kontrolli</button>
+                <p id="ruResult" class="result"></p>
+            </td>
+            <!-- Столбец 2: показываем русское слово, вводим эстонский перевод -->
+            <td>
+                <span id="ruWord" class="word">—</span>
+                <input type="text" id="estInput" placeholder="Sisesta tõlge...">
+                <button id="checkEstBtn">Kontrolli</button>
+                <p id="estResult" class="result"></p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Счётчик правильных ответов -->
+    <p class="score">Skoor: <span id="score">0</span></p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
